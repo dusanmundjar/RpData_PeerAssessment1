@@ -1,5 +1,6 @@
 ---
 title: "RR_Assessment1"
+output: pdf_document
 ---
 
 ## Loading and preprocessing the data
@@ -63,10 +64,13 @@ Calculated in preprocessing data
 head(SBD1)
 ```
 
-#### A1.2. Histogram of the total number of steps taken each day
+#### A1.2. Histogram 
+
+Histogram of the total number of steps taken each day
 
 ```{r}
 hist(SBD1$steps,main="Histogram of Total number of steps taken each day",xlab="steps")
+
 ```
 
 #### A1.3.1. Mean of the total number of steps taken per day
@@ -83,7 +87,8 @@ median(SBD1$steps)
 
 ## A2. Average daily activity pattern
 
-### A2.1. Time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
+### A2.1. Time series plot 
+Time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis)
 
 ```{r}
 plot(SBI1,type="l",main="Average number of steps taken, averaged across all days,\n in the 5-minute intervals ")
